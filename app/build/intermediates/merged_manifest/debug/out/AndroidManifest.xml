@@ -18,12 +18,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.LungsDetectorMD.NoActionBar" >
-        <activity android:name="com.wildan.lungsdetector_md.MainActivity" >
+        <activity android:name="com.wildan.lungsdetector_md.SplashScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.wildan.lungsdetector_md.MainActivity" >
         </activity>
     </application>
 
