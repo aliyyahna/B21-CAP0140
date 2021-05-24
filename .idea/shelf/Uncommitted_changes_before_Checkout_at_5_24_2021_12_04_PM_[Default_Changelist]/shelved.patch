@@ -1,0 +1,34 @@
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleHome\" value=\"$PROJECT_DIR$/../../../../Program Files/gradle-6.6.1\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 8a66fcb183228071a0eebbb8a53cd46b88b6e80f)
++++ .idea/gradle.xml	(date 1621832652103)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/Lungs_Detector_-MD.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/Lungs_Detector_-MD.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/app/Lungs_Detector_-MD.app.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/app/Lungs_Detector_-MD.app.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/lungsdetector/Lungs_Detector_-MD.lungsdetector.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/lungsdetector/Lungs_Detector_-MD.lungsdetector.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 8a66fcb183228071a0eebbb8a53cd46b88b6e80f)
++++ .idea/modules.xml	(date 1621832652097)
+@@ -4,7 +4,6 @@
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lungs_Detector_-MD.iml" filepath="$PROJECT_DIR$/.idea/modules/Lungs_Detector_-MD.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Lungs_Detector_-MD.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Lungs_Detector_-MD.app.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lungsdetector/Lungs_Detector_-MD.lungsdetector.iml" filepath="$PROJECT_DIR$/.idea/modules/lungsdetector/Lungs_Detector_-MD.lungsdetector.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
