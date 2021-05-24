@@ -1,0 +1,2 @@
+com/wildan/lungsdetector_md/BuildConfig.java
+ com.wildan.lungsdetector_md.BuildConfig
