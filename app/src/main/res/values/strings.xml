@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lungs Detector -MD</string>
+    <string name="app_name">Lungs Detector</string>
     <string name="select_image">Select Image</string>
     <string name="scan_now">Scan Now</string>
     <string name="selectImgXray">Please select your \nX - RAY image</string>

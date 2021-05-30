@@ -1,2 +1,15 @@
 com/wildan/lungsdetector_md/BuildConfig.java
  com.wildan.lungsdetector_md.BuildConfig
+com/wildan/lungsdetector_md/databinding/ActivityMainBinding.java
+ com.wildan.lungsdetector_md.databinding.ActivityMainBinding
+com/wildan/lungsdetector_md/database/AppDatabase_Impl.java
+ com.wildan.lungsdetector_md.database.AppDatabase_Impl
+ com.wildan.lungsdetector_md.database.AppDatabase_Impl$1
+com/wildan/lungsdetector_md/databinding/ActivityResultBinding.java
+ com.wildan.lungsdetector_md.databinding.ActivityResultBinding
+com/wildan/lungsdetector_md/databinding/ActivitySplashScreenBinding.java
+ com.wildan.lungsdetector_md.databinding.ActivitySplashScreenBinding
+com/wildan/lungsdetector_md/database/IllnessDao_Impl.java
+ com.wildan.lungsdetector_md.database.IllnessDao_Impl
+ com.wildan.lungsdetector_md.database.IllnessDao_Impl$1
+ com.wildan.lungsdetector_md.database.IllnessDao_Impl$2

@@ -19,6 +19,6 @@ class SharedPrefs(context: Context) {
     }
 
     fun getFirstRun(): Boolean {
-        return preferences.getBoolean(FIRSTRUN, false)
+        return preferences.getBoolean(FIRSTRUN, true)
     }
 }

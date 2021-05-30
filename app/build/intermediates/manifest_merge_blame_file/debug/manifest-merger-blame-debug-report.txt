@@ -46,6 +46,15 @@
 28-->C:\Users\Wildank\AndroidStudioProjects\B21-CAP0140MD\app\src\main\AndroidManifest.xml:19:9-20:20
 28-->C:\Users\Wildank\AndroidStudioProjects\B21-CAP0140MD\app\src\main\AndroidManifest.xml:19:19-47
 29        </activity>
-30    </application>
-31
-32</manifest>
+30
+31        <service
+31-->[androidx.room:room-runtime:2.3.0] C:\Users\Wildank\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+32            android:name="androidx.room.MultiInstanceInvalidationService"
+32-->[androidx.room:room-runtime:2.3.0] C:\Users\Wildank\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+33            android:directBootAware="true"
+33-->[androidx.room:room-runtime:2.3.0] C:\Users\Wildank\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+34            android:exported="false" />
+34-->[androidx.room:room-runtime:2.3.0] C:\Users\Wildank\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+35    </application>
+36
+37</manifest>

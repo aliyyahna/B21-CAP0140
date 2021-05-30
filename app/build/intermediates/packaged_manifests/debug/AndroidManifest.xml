@@ -27,6 +27,11 @@
         </activity>
         <activity android:name="com.wildan.lungsdetector_md.MainActivity" >
         </activity>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>
