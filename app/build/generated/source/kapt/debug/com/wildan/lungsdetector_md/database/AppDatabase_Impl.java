@@ -33,9 +33,9 @@ public final class AppDatabase_Impl extends AppDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `IllnessData` (`IllnessId` INTEGER, `type` TEXT, `desc` TEXT, `name` INTEGER, PRIMARY KEY(`IllnessId`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `IllnessData` (`IllnessId` INTEGER, `type` TEXT, `desc` TEXT, `name` TEXT, PRIMARY KEY(`IllnessId`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7cca960bb9e949b9a05089c61354d88a')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '16c0e382864d70ce82c45dbed10d5673')");
       }
 
       @Override
@@ -83,7 +83,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         _columnsIllnessData.put("IllnessId", new TableInfo.Column("IllnessId", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsIllnessData.put("type", new TableInfo.Column("type", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsIllnessData.put("desc", new TableInfo.Column("desc", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsIllnessData.put("name", new TableInfo.Column("name", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsIllnessData.put("name", new TableInfo.Column("name", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysIllnessData = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesIllnessData = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoIllnessData = new TableInfo("IllnessData", _columnsIllnessData, _foreignKeysIllnessData, _indicesIllnessData);
@@ -95,7 +95,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "7cca960bb9e949b9a05089c61354d88a", "c84a22abd9971481d7a0e488a9dc2ecd");
+    }, "16c0e382864d70ce82c45dbed10d5673", "344b97fe8a2788de0f0fa01b43eb6f8e");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

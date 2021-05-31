@@ -8,7 +8,6 @@ import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
-import java.lang.Boolean;
 import java.lang.Class;
 import java.lang.Integer;
 import java.lang.Override;
@@ -51,12 +50,10 @@ public final class IllnessDao_Impl implements IllnessDao {
         } else {
           stmt.bindString(3, value.getDesc());
         }
-        final Integer _tmp;
-        _tmp = value.getName() == null ? null : (value.getName() ? 1 : 0);
-        if (_tmp == null) {
+        if (value.getName() == null) {
           stmt.bindNull(4);
         } else {
-          stmt.bindLong(4, _tmp);
+          stmt.bindString(4, value.getName());
         }
       }
     };
@@ -135,14 +132,12 @@ public final class IllnessDao_Impl implements IllnessDao {
         } else {
           _tmpDesc = _cursor.getString(_cursorIndexOfDesc);
         }
-        final Boolean _tmpName;
-        final Integer _tmp;
+        final String _tmpName;
         if (_cursor.isNull(_cursorIndexOfName)) {
-          _tmp = null;
+          _tmpName = null;
         } else {
-          _tmp = _cursor.getInt(_cursorIndexOfName);
+          _tmpName = _cursor.getString(_cursorIndexOfName);
         }
-        _tmpName = _tmp == null ? null : _tmp != 0;
         _item = new DataIllnessEntity(_tmpIllnessId,_tmpType,_tmpDesc,_tmpName);
         _result.add(_item);
       }
@@ -186,14 +181,12 @@ public final class IllnessDao_Impl implements IllnessDao {
         } else {
           _tmpDesc = _cursor.getString(_cursorIndexOfDesc);
         }
-        final Boolean _tmpName;
-        final Integer _tmp;
+        final String _tmpName;
         if (_cursor.isNull(_cursorIndexOfName)) {
-          _tmp = null;
+          _tmpName = null;
         } else {
-          _tmp = _cursor.getInt(_cursorIndexOfName);
+          _tmpName = _cursor.getString(_cursorIndexOfName);
         }
-        _tmpName = _tmp == null ? null : _tmp != 0;
         _result = new DataIllnessEntity(_tmpIllnessId,_tmpType,_tmpDesc,_tmpName);
       } else {
         _result = null;

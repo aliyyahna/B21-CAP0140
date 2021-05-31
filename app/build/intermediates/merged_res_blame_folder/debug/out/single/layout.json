@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Dimas\\Documents\\GitHub\\B21-CAP0140\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Dimas\\Documents\\GitHub\\B21-CAP0140\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\Documents\\GitHub\\B21-CAP0140\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
-        "source": "C:\\Users\\Dimas\\Documents\\GitHub\\B21-CAP0140\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+        "merged": "C:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_result.xml",
+        "source": "C:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\src\\main\\res\\layout\\activity_result.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\Documents\\GitHub\\B21-CAP0140\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_result.xml",
-        "source": "C:\\Users\\Dimas\\Documents\\GitHub\\B21-CAP0140\\app\\src\\main\\res\\layout\\activity_result.xml"
+        "merged": "C:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\src\\main\\res\\layout\\activity_main.xml"
     }
 ]
