@@ -6,6 +6,10 @@ com/wildan/lungsdetector_md/BuildConfig.java
  com.wildan.lungsdetector_md.BuildConfig
 com/wildan/lungsdetector_md/databinding/ActivityMainBinding.java
  com.wildan.lungsdetector_md.databinding.ActivityMainBinding
+com/wildan/lungsdetector_md/ml/Model2.java
+ com.wildan.lungsdetector_md.ml.Model2
+ com.wildan.lungsdetector_md.ml.Model2$1
+ com.wildan.lungsdetector_md.ml.Model2$Outputs
 com/wildan/lungsdetector_md/ml/Model.java
  com.wildan.lungsdetector_md.ml.Model
  com.wildan.lungsdetector_md.ml.Model$1

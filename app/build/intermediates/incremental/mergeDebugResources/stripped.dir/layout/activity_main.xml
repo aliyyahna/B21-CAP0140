@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graygreen"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#F7FBFC"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:padding="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_marginTop="32dp"
+                android:textColor="@color/black"
+                android:id="@+id/tx_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/selectImgXray"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.card.MaterialCardView
+               android:layout_margin="20dp"
+                app:strokeColor="@color/graygreen"
+                app:strokeWidth="2dp"
+                android:id="@+id/cv_prevImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tx_select"
+                android:layout_centerHorizontal="true"
+                android:background="#000000"
+                app:cardCornerRadius="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="256dp"
+                        android:layout_height="256dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_upload" />
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <Button
+                android:id="@+id/button"
+                android:padding="5dp"
+                android:drawableTint="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_prevImg"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/select_image"
+                android:background="@drawable/btn_secondary"
+                android:drawableStart="@drawable/ic_baseline_image_24" />
+
+            <Button
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:background="@drawable/btn_primary"
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:text="@string/scan_now"
+                android:drawableStart="@drawable/ic_baseline_scan_24"
+                app:icon="@drawable/ic_baseline_scan_24" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

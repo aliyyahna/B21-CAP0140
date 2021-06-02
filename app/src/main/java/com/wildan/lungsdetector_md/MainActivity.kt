@@ -10,6 +10,7 @@ import android.util.Log
 import android.widget.Toast
 import com.wildan.lungsdetector_md.databinding.ActivityMainBinding
 import com.wildan.lungsdetector_md.ml.Model
+import com.wildan.lungsdetector_md.ml.Model2
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -42,13 +43,13 @@ class MainActivity : AppCompatActivity() {
         binding.button2.setOnClickListener {
             if (bitmatcod) {
                 val resized = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
-                val model = Model.newInstance(this)
+                val model = Model2.newInstance(this)
 
                 val tbuffer = TensorImage.fromBitmap(resized)
                 val byteBuffer = tbuffer.buffer
                 Log.d("TAG", byteBuffer.toString())
 // Creates inputs for reference.
-                val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
+                val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.UINT8)
                 Log.d("TAG", inputFeature0.toString())
                 inputFeature0.loadBuffer(byteBuffer)
 
@@ -58,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
                 var max = getMax(outputFeature0.floatArray)
 
+                binding.txSelect.text = labels[max]
 //            text_view.setText(labels[max])
 
 // Releases model resources if no longer used.
