@@ -84,7 +84,7 @@ object IllnessData {
             Practice good hygiene. To protect yourself against respiratory infections that sometimes lead to pneumonia, wash your hands regularly or use an alcohol-based hand sanitizer.
             Don't smoke. Smoking damages your lungs' natural defenses against respiratory infections.
             Keep your immune system strong. Get enough sleep, exercise regularly and eat a healthy diet.
-        """.trimIndent(), "Pneumonia"),
+        """.trimIndent(), "pneumonia"),
         DataIllnessEntity(2, "normal",
         """
             your lungs is healthy try these tips to avoid any future posibility of getting any lungs related illness :
@@ -111,7 +111,34 @@ object IllnessData {
 
             Exercise
             Whether you are young or old, slender or large, able-bodied or living with a chronic illness or disability, being physically active can help keep your lungs healthy. Learn more about how exercise can strengthen your lungs.
-        """.trimIndent(), "Healthy"),
+        """.trimIndent(), "normal"),
+            DataIllnessEntity(3, "normal",
+        """
+            your lungs is healthy try these tips to avoid any future posibility of getting any lungs related illness :
+            
+            Don't Smoke
+            Cigarette smoking is the major cause of lung cancer and chronic obstructive pulmonary disease (COPD), which includes chronic bronchitis and emphysema. Cigarette smoke can narrow the air passages and make breathing more difficult. It causes chronic inflammation, or swelling in the lung, which can lead to chronic bronchitis. Over time cigarette smoke destroys lung tissue and may trigger changes that grow into cancer. If you smoke, it's never too late to benefit from quitting. The American Lung Association can help whenever you are ready.
+
+            Avoid Exposure to Indoor Pollutants That Can Damage Your Lungs
+            Secondhand smoke, chemicals in the home and workplace, and radon all can cause or worsen lung disease. Make your home and car smokefree. Test your home for radon. Avoid exercising outdoors on bad air days. And talk to your healthcare provider if you are worried that something in your home, school or work may be making you sick.
+
+            Minimize Exposure to Outdoor Air Pollution
+            The air quality outside can vary from day to day and sometimes is unhealthy to breathe. Knowing how outdoor air pollution affects your health and useful strategies to minimize prolonged exposure can help keep you and your family well. Climate change and natural disasters can also directly impact lung health.
+
+            Prevent Infection
+            A cold or other respiratory infection can sometimes become very serious. There are several things you can do to protect yourself:
+
+            Wash your hands often with soap and water. Alcohol-based cleaners are a good substitute if you cannot wash.
+            Avoids crowds during the cold and flu season.
+            Good oral hygiene can protect you from the germs in your mouth leading to infections. Brush your teeth at least twice daily and see your dentist at least every six months.
+            Get vaccinated every year against influenza. Talk to your healthcare provider to find out if the pneumonia vaccine is right for you.
+            If you get sick, keep it to yourself! Protect the people around you, including your loved ones, by keeping your distance. Stay home from work or school until you're feeling better.
+            Get Regular Check-ups
+            Regular check-ups help prevent diseases, even when you are feeling well. This is especially true for lung disease, which sometimes goes undetected until it is serious. During a check-up, your healthcare provider will listen to your breathing and listen to your concerns. If you need health insurance, learn more about your options.
+
+            Exercise
+            Whether you are young or old, slender or large, able-bodied or living with a chronic illness or disability, being physically active can help keep your lungs healthy. Learn more about how exercise can strengthen your lungs.
+        """.trimIndent(), "covid")
 
     )
 }

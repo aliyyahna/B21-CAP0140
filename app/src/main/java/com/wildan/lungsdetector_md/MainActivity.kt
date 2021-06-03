@@ -8,9 +8,15 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
+import com.wildan.lungsdetector_md.database.AppDatabase
+import com.wildan.lungsdetector_md.database.DataIllnessEntity
 import com.wildan.lungsdetector_md.databinding.ActivityMainBinding
 import com.wildan.lungsdetector_md.ml.Model
 import com.wildan.lungsdetector_md.ml.Model2
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -57,13 +63,27 @@ class MainActivity : AppCompatActivity() {
                 val outputs = model.process(inputFeature0)
                 val outputFeature0 = outputs.outputFeature0AsTensorBuffer
 
-                var max = getMax(outputFeature0.floatArray)
+                val max = getMax(outputFeature0.floatArray)
 
                 binding.txSelect.text = labels[max]
 //            text_view.setText(labels[max])
 
+
+                Intent(this, ResultActivity::class.java).apply {
+                    CoroutineScope(Dispatchers.IO).launch {
+                        val detail = getDetail(labels[max].trim())
+                        withContext(Dispatchers.Main) {
+                            if (detail.IllnessId!=9) {
+                                putExtra(ILLNESS_DESC, detail)
+                                startActivity(this@apply)
+                            }
+                            }
+                    }
+                }
 // Releases model resources if no longer used.
                 model.close()
+
+
             }
             else if (!bitmatcod) Toast.makeText(this, "Please Insert the Image", Toast.LENGTH_SHORT).show()
         }
@@ -85,7 +105,7 @@ class MainActivity : AppCompatActivity() {
         var ind = 0
         var min = 0.0f
 
-        for(i in 0..1000)
+        for(i in 0..2)
         {
             if(arr[i] > min)
             {
@@ -95,4 +115,15 @@ class MainActivity : AppCompatActivity() {
         }
         return ind
     }
+
+    fun getDetail(name : String) : DataIllnessEntity {
+        return when (name) {
+            "pneumonia"->  AppDatabase.getDatabase(this).illnessDao().loadById(1)
+            "normal"->  AppDatabase.getDatabase(this).illnessDao().loadById(2)
+            "covid"->  AppDatabase.getDatabase(this).illnessDao().loadById(3)
+            else -> DataIllnessEntity(9,null,null,null)
+        }
+
+    }
+
 }

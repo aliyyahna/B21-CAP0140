@@ -27,7 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.wildan.lungsdetector_md.MainActivity" >
+        <activity android:name="com.wildan.lungsdetector_md.MainActivity" />
+        <activity android:name="com.wildan.lungsdetector_md.ResultActivity" >
         </activity>
 
         <service
