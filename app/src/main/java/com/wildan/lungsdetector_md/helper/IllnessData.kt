@@ -11,8 +11,9 @@ object IllnessData {
             Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia.
 
             Pneumonia can range in seriousness from mild to life-threatening. It is most serious for infants and young children, people older than age 65, and people with health problems or weakened immune systems.
-            
-            Symptoms
+        """.trimIndent(), "pneumonia"),
+
+/*            Symptoms
             The signs and symptoms of pneumonia vary from mild to severe, depending on factors such as the type of germ causing the infection, and your age and overall health. Mild signs and symptoms often are similar to those of a cold or flu, but they last longer.
 
             Signs and symptoms of pneumonia may include:
@@ -83,11 +84,12 @@ object IllnessData {
             Make sure children get vaccinated. Doctors recommend a different pneumonia vaccine for children younger than age 2 and for children ages 2 to 5 years who are at particular risk of pneumococcal disease. Children who attend a group child care center should also get the vaccine. Doctors also recommend flu shots for children older than 6 months.
             Practice good hygiene. To protect yourself against respiratory infections that sometimes lead to pneumonia, wash your hands regularly or use an alcohol-based hand sanitizer.
             Don't smoke. Smoking damages your lungs' natural defenses against respiratory infections.
-            Keep your immune system strong. Get enough sleep, exercise regularly and eat a healthy diet.
-        """.trimIndent(), "pneumonia"),
+            Keep your immune system strong. Get enough sleep, exercise regularly and eat a healthy diet.*/
         DataIllnessEntity(2, "normal",
         """
-            your lungs is healthy try these tips to avoid any future posibility of getting any lungs related illness :
+            Your lungs is healthy ♡! 
+        """.trimIndent(), "normal"),
+     /*       try these tips to avoid any future posibility of getting any lungs related illness :
             
             Don't Smoke
             Cigarette smoking is the major cause of lung cancer and chronic obstructive pulmonary disease (COPD), which includes chronic bronchitis and emphysema. Cigarette smoke can narrow the air passages and make breathing more difficult. It causes chronic inflammation, or swelling in the lung, which can lead to chronic bronchitis. Over time cigarette smoke destroys lung tissue and may trigger changes that grow into cancer. If you smoke, it's never too late to benefit from quitting. The American Lung Association can help whenever you are ready.
@@ -110,13 +112,13 @@ object IllnessData {
             Regular check-ups help prevent diseases, even when you are feeling well. This is especially true for lung disease, which sometimes goes undetected until it is serious. During a check-up, your healthcare provider will listen to your breathing and listen to your concerns. If you need health insurance, learn more about your options.
 
             Exercise
-            Whether you are young or old, slender or large, able-bodied or living with a chronic illness or disability, being physically active can help keep your lungs healthy. Learn more about how exercise can strengthen your lungs.
-        """.trimIndent(), "normal"),
+            Whether you are young or old, slender or large, able-bodied or living with a chronic illness or disability, being physically active can help keep your lungs healthy. Learn more about how exercise can strengthen your lungs.*/
+   /*     """.trimIndent(), "normal"),*/
             DataIllnessEntity(3, "normal",
         """
             COVID-19 is a respiratory condition caused by a coronavirus. Some people are infected but don’t notice any symptoms. Most people will have mild symptoms and get better on their own. But about 1 in 6 will have severe problems, such as trouble breathing. The odds of more serious symptoms are higher if you’re older or have another health condition like diabetes or heart disease.
-
-            Here’s what to look for if you think you might have COVID-19.
+        """.trimIndent(), "COVID-19")
+          /*  Here’s what to look for if you think you might have COVID-19.
 
             Common Symptoms
             Researchers in China found that the most common symptoms among people who were hospitalized with COVID-19 include:
@@ -170,7 +172,7 @@ object IllnessData {
             Heart problems
             Kidney damage
             Liver problems or damage
-            Some doctors have reported rashes tied to COVID-19, including purple or blue lesions on children’s toes and feet. Researchers are looking into these reports so they can understand the effect on people who have COVID-19. 
+            Some doctors have reported rashes tied to COVID-19, including purple or blue lesions on children’s toes and feet. Researchers are looking into these reports so they can understand the effect on people who have COVID-19.
 
             Symptoms in Children
             Researchers say kids have many of the same COVID-19 symptoms as adults, but they tend to be milder. Common symptoms in children include:
@@ -221,7 +223,7 @@ object IllnessData {
             If you don’t have a fever and your eyes aren’t itchy, it’s probably a cold.
 
             Call your doctor if you’re concerned about any symptoms. COVID-19 can range from mild to severe, so it may be hard to diagnose. Testing could be available in your area.
-            
+
             How to Protect Yourself
             There are COVID-19 vaccines available and you should get one, if possible. Otherwise, take these steps to prevent COVID-19:
 
@@ -232,7 +234,7 @@ object IllnessData {
             Avoid people who are sick.
             Don’t touch your eyes, nose, or mouth unless you’ve just washed your hands.
             Regularly clean and disinfect surfaces that you touch a lot.
-            
+
             Caring for Someone Who Has COVID-19 Symptoms
             If you’re taking care of someone who’s sick, follow these steps to protect yourself:
 
@@ -242,7 +244,7 @@ object IllnessData {
             Use gloves when handling the other person’s dishes, laundry, or trash. When you’re done, throw away the gloves and wash your hands.
             Regularly clean and disinfect common surfaces such as doorknobs, light switches, faucets, and countertops.
             Take care of yourself. Get enough rest and nutrition. Watch for COVID-19 symptoms.
-        """.trimIndent(), "covid")
+        """.trimIndent(), "COVID-19")*/
 
     )
 }

@@ -1,11 +1,16 @@
 package com.wildan.lungsdetector_md
 
+import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.net.toUri
+import androidx.annotation.StringRes
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 import com.wildan.lungsdetector_md.database.DataIllnessEntity
 import com.wildan.lungsdetector_md.databinding.ActivityResultBinding
+
 
 class ResultActivity : AppCompatActivity() {
 
@@ -24,5 +29,10 @@ class ResultActivity : AppCompatActivity() {
             description.text = extra?.desc
             imageView.setImageURI(uri)
         }
+        activityResultBinding.btnBack.setOnClickListener {
+            startActivity(Intent(this@ResultActivity, MainActivity::class.java))
+            finish()
+        }
+
     }
 }

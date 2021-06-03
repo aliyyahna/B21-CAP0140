@@ -5,11 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import com.google.android.material.card.MaterialCardView;
 import com.wildan.lungsdetector_md.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -17,7 +18,13 @@ import java.lang.String;
 
 public final class ActivityResultBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
+
+  @NonNull
+  public final ImageView btnBack;
+
+  @NonNull
+  public final MaterialCardView cvImgView;
 
   @NonNull
   public final TextView description;
@@ -34,10 +41,12 @@ public final class ActivityResultBinding implements ViewBinding {
   @NonNull
   public final TextView titleIllness;
 
-  private ActivityResultBinding(@NonNull ConstraintLayout rootView, @NonNull TextView description,
-      @NonNull View divider, @NonNull View divider2, @NonNull ImageView imageView,
-      @NonNull TextView titleIllness) {
+  private ActivityResultBinding(@NonNull ScrollView rootView, @NonNull ImageView btnBack,
+      @NonNull MaterialCardView cvImgView, @NonNull TextView description, @NonNull View divider,
+      @NonNull View divider2, @NonNull ImageView imageView, @NonNull TextView titleIllness) {
     this.rootView = rootView;
+    this.btnBack = btnBack;
+    this.cvImgView = cvImgView;
     this.description = description;
     this.divider = divider;
     this.divider2 = divider2;
@@ -47,7 +56,7 @@ public final class ActivityResultBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -72,6 +81,18 @@ public final class ActivityResultBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_back;
+      ImageView btnBack = rootView.findViewById(id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
+      id = R.id.cv_imgView;
+      MaterialCardView cvImgView = rootView.findViewById(id);
+      if (cvImgView == null) {
+        break missingId;
+      }
+
       id = R.id.description;
       TextView description = rootView.findViewById(id);
       if (description == null) {
@@ -102,8 +123,8 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityResultBinding((ConstraintLayout) rootView, description, divider, divider2,
-          imageView, titleIllness);
+      return new ActivityResultBinding((ScrollView) rootView, btnBack, cvImgView, description,
+          divider, divider2, imageView, titleIllness);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -55,10 +55,8 @@ class MainActivity : AppCompatActivity() {
 
                 val tbuffer = TensorImage.fromBitmap(resized)
                 val byteBuffer = tbuffer.buffer
-                Log.d("TAG", byteBuffer.toString())
 // Creates inputs for reference.
                 val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.UINT8)
-                Log.d("TAG", inputFeature0.toString())
                 inputFeature0.loadBuffer(byteBuffer)
 
 // Runs model inference and gets result.
@@ -67,8 +65,6 @@ class MainActivity : AppCompatActivity() {
 
                 val max = getMax(outputFeature0.floatArray)
 
-                binding.txSelect.text = labels[max]
-//            text_view.setText(labels[max])
 
 
                 Intent(this, ResultActivity::class.java).apply {
