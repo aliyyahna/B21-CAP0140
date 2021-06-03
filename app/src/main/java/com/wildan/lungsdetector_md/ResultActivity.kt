@@ -30,7 +30,6 @@ class ResultActivity : AppCompatActivity() {
             imageView.setImageURI(uri)
         }
         activityResultBinding.btnBack.setOnClickListener {
-            startActivity(Intent(this@ResultActivity, MainActivity::class.java))
             finish()
         }
 
