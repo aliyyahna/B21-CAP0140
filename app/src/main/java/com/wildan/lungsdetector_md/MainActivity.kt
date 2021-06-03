@@ -23,11 +23,13 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
-    lateinit var bitmap: Bitmap
+    private lateinit var uri: Uri
+    private lateinit var bitmap: Bitmap
     private var bitmatcod : Boolean = false
 
     companion object {
         const val ILLNESS_DESC = "illness_desc"
+        const val ILLNESS_PIC = "illness_pic"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,8 +77,9 @@ class MainActivity : AppCompatActivity() {
                         withContext(Dispatchers.Main) {
                             if (detail.IllnessId!=9) {
                                 putExtra(ILLNESS_DESC, detail)
+                                putExtra(ILLNESS_PIC, uri.toString())
                                 startActivity(this@apply)
-                            }
+                                }
                             }
                     }
                 }
@@ -95,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         if (data!=null) {
             binding.imageView.setImageURI(data.data)
 
-            val uri: Uri? = data.data
+            uri = data.data!!
             bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
             bitmatcod = true
         }

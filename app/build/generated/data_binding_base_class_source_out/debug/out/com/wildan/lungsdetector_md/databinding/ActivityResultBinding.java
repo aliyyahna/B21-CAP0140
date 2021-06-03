@@ -32,20 +32,16 @@ public final class ActivityResultBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final TextView textView4;
-
-  @NonNull
   public final TextView titleIllness;
 
   private ActivityResultBinding(@NonNull ConstraintLayout rootView, @NonNull TextView description,
       @NonNull View divider, @NonNull View divider2, @NonNull ImageView imageView,
-      @NonNull TextView textView4, @NonNull TextView titleIllness) {
+      @NonNull TextView titleIllness) {
     this.rootView = rootView;
     this.description = description;
     this.divider = divider;
     this.divider2 = divider2;
     this.imageView = imageView;
-    this.textView4 = textView4;
     this.titleIllness = titleIllness;
   }
 
@@ -100,12 +96,6 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = rootView.findViewById(id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
       id = R.id.title_illness;
       TextView titleIllness = rootView.findViewById(id);
       if (titleIllness == null) {
@@ -113,7 +103,7 @@ public final class ActivityResultBinding implements ViewBinding {
       }
 
       return new ActivityResultBinding((ConstraintLayout) rootView, description, divider, divider2,
-          imageView, textView4, titleIllness);
+          imageView, titleIllness);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

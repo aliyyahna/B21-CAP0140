@@ -1,4 +1,4 @@
-#Thu Jun 03 11:28:31 ICT 2021
+#Thu Jun 03 14:42:00 ICT 2021
 base.0=C\:\\Users\\Wildank\\AndroidStudioProjects\\B21-CAP0140MD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
